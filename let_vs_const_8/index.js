@@ -16,9 +16,7 @@
 
 // ReferenceError: x is not defined
 console.log(x);
-let x =10;
-
-
+let x = 10;
 
 /*
 
@@ -48,3 +46,14 @@ so many things here. I would like to sum up in notes,
 8. Initialising variables at the top is good idea, helps shrinks TDZ to zero.
 
 */
+
+// Good article that talks about hoisting
+// https://www.freecodecamp.org/news/javascript-temporal-dead-zone-and-hoisting-explained/
+
+// In other words, when the computer hoists a var variable, it automatically initializes the variable with the value undefined.
+
+// In contrast, JavaScript does not initialize a let (or const) variable with any value whenever it hoists the variable. Instead, the variable remains dead and inaccessible.
+
+// Therefore, a let (or const) variable’s TDZ ends when JavaScript fully initializes it with the value specified during its declaration.
+
+// However, a var variable’s TDZ ends immediately after its hoisting—not when the variable gets fully initialized with the value specified during its declaration.
